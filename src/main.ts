@@ -3,11 +3,11 @@ import React, { useEffect, useRef, useState } from 'react';
 export function useDynamicSvgImport(iconName: string) {
   const importedIconRef = useRef<React.FC<React.SVGProps<SVGElement>>>();
 
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<unknown>();
 
   useEffect(() => {
-    setLoading(true);
+    setIsLoading(true);
 
     // dynamically import the mentioned svg icon name in props
     const importSvgIcon = async (): Promise<void> => {
@@ -19,7 +19,7 @@ export function useDynamicSvgImport(iconName: string) {
         setError(err);
         console.error(err);
       } finally {
-        setLoading(false);
+        setIsLoading(false);
       }
     };
 
@@ -28,7 +28,7 @@ export function useDynamicSvgImport(iconName: string) {
 
   return {
     error,
-    loading,
+    isLoading,
     SvgIcon: importedIconRef?.current
   };
 }
