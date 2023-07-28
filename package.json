@@ -2,18 +2,26 @@
   "name": "@roeefl/use-dynamic-svg-import",
   "version": "0.1.0",
   "description": "A small react hook to allow dynamically importing SVG files directly into jsx/tsx files",
-  "main": "dist/index.j",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "dist/main.js",
+  "author": "roeefl",
+  "repository": {
+    "url": "git+https://github.com/Roeefl/use-dynamic-svg-import.git"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "dynamic import"
+  ],
   "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "typescript": "^5.1.6"
+    "react": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.17"
+    "@types/react": "^18.2.17",
+    "typescript": "^5.1.6"
   }
 }
