@@ -1,6 +1,11 @@
 # use-dynamic-svg-import
 
-A small react hook to allow dynamically importing SVG files directly into jsx/tsx files
+A small react hook to allow dynamically importing SVG files directly into jsx/tsx files\
+
+# credits
+
+Many thanks to (@junwen-k)[https://stackoverflow.com/users/11125492/junwen-k] for this
+See (original thread)[https://stackoverflow.com/a/61472427/6643053]
 
 # how to add to repo
 
